@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <h2 id="display-total">$0</h2>
+    <div id="category-button-container">
+        <i class='bx bx-home' onclick="classList.toggle('bx-home'); classList.toggle('bxs-home');"></i>
+        <i class='bx bx-bowl-hot' onclick="classList.toggle('bx-bowl-hot'); classList.toggle('bxs-bowl-hot');"></i>
+        <i class='bx bx-briefcase-alt' onclick="classList.toggle('bx-briefcase-alt'); classList.toggle('bxs-briefcase-alt');"></i>
+        <i class='bx bx-book' onclick="classList.toggle('bx-book'); classList.toggle('bxs-book');"></i>
+        <i class='bx bx-shopping-bag' onclick="classList.toggle('bx-shopping-bag'); classList.toggle('bxs-shopping-bag');"></i>
+    </div>
+    <div id="add-subtract-button-container">
+        <input type="text" id="search-bar">
+        <i class='bx bx-plus' id="plus-button" onclick="addMoney()"></i>
+        <i class='bx bx-minus' id="minus-button" onclick="subtractMoney()"></i>
+    </div>
+    <div id="expense-list-div">
+        <ul id="expense-list">
+
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
