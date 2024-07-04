@@ -26,7 +26,7 @@ h1, h2 {
     display: flex;
     justify-content: center;
 
-    padding-left: 20px;
+    padding-left: 35px;
     padding-right: 20px;
     margin-right: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -39,6 +39,10 @@ h1, h2 {
     height: 50px;
     width: 500px;
     font-size: 12pt;
+
+    background: url('/dollar-regular-24.png') no-repeat left;
+    background-size: 20px;
+    background-position: 10px;
 }
 
 #category-button-container {
@@ -63,11 +67,20 @@ h1, h2 {
     margin: auto 10px;
 }
 
+#plus-button::before, #minus-button::before {
+    background-color: white;
+}
+
+#plus-button::after, #minus-button::after {
+    background-color: #0000;
+}
+
 ul {
     list-style: none;
 }
 
 li {
+    display: flex;
     height: 20px;
     width: 500px;
     margin-bottom: 20px;
@@ -76,10 +89,40 @@ li {
     outline: 0;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 5px;
+    margin: auto 0;
 }
 
 #expense-list-div {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+}
+
+/* Expense List Items */
+
+.add-expense-item {
+    background: url('/plus-regular-24.png') no-repeat left;
+    background-size: 20px;
+    background-position: 10px 16px;
+
+    padding-left: 35px;
+}
+
+.subtract-expense-item {
+    background: url('/minus-regular-24.png') no-repeat left;
+    background-size: 20px;
+    background-position: 10px 16px;
+
+    padding-left: 35px;
+}
+
+.bx-trash {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    width: 100%;
+    text-align: right;
 }
